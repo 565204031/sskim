@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sskim</string>
+    <string name="draw_open">打开</string>
+    <string name="draw_close">关闭</string>
+</resources>

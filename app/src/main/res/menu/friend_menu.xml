@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add"
+        android:orderInCategory="100"
+        android:title="加好友"
+        >
+    </item>
+    <item
+        android:id="@+id/room"
+        android:orderInCategory="100"
+        android:title="群聊一会"
+        >
+    </item>
+</menu>

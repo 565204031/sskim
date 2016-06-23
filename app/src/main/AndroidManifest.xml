@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ssk.sskim">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".MyApplication"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name="com.ssk.sskim.activity.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ssk.sskim.activity.FriendsActivity"
+            android:label="好友列表" />
+        <activity
+            android:name="com.ssk.sskim.activity.FriendsAddActivity"
+            android:label="添加好友"/>
+        <activity
+            android:name="com.ssk.sskim.activity.ChatActivity"
+            android:label="聊天"/>
+        <activity
+            android:name="com.ssk.sskim.activity.ChatRoomChatingActivity"
+            android:label="群聊"/>
+        <activity
+            android:name="com.ssk.sskim.activity.ChatRoomCreateActivity"
+            android:label="创建群组"/>
+        <activity
+            android:name="com.ssk.sskim.activity.ChatRoomJoinActivity"
+            android:label="加入群组"/>
+        <activity
+            android:name="com.ssk.sskim.activity.ChatRoomOperateActivity"
+            android:label="操作"/>
+        <activity
+            android:name="com.ssk.sskim.activity.ChatHistoryActivity"
+            android:label="聊天记录"/>
+
+
+
+        <service android:name="com.ssk.sskim.service.MessageService"/>
+    </application>
+
+</manifest>

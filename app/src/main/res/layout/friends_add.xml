@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/login_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加好友"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="3"
+            android:background="#CCC"
+            android:drawableLeft="@drawable/search_icon"
+            android:textStyle="bold"  />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:text="搜索"
+            android:onClick="search" />
+    </LinearLayout>
+
+    <ListView 
+        android:id="@+id/lv_results"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

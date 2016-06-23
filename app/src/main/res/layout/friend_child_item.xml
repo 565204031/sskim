@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffeef1f3"
+    android:orientation="horizontal" >
+
+    <com.ssk.sskim.view.CircleImageView
+        android:id="@+id/iv_friend_icon"
+        android:layout_width="40.0dp"
+        android:layout_height="40.0dp"
+        android:layout_margin="3dip"
+        android:src="@mipmap/ic_user_default"
+        />
+
+    <TextView
+        android:id="@+id/tv_friend_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_friend_icon"
+        android:paddingTop="5.0dp"
+        android:text="游戏人间"
+        android:textColor="#ff54acea"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/tv_friend_mood"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_friend_nickname"
+        android:layout_toRightOf="@id/iv_friend_icon"
+        android:text=""
+        android:textSize="12.0sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_friend_icon"
+        android:background="@drawable/interval_line" />
+
+</RelativeLayout>

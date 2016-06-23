@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffeef1f3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ptt_history"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_group_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/sc_openablum" />
+
+        <TextView
+            android:id="@+id/tv_group_name"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center_vertical"
+            android:text="name(0/3)"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
